@@ -1,0 +1,22 @@
+
+</head>
+<body style="background-image: url('{{backgroundImg}}');">
+
+  <section class="m-5">
+
+    <h1>{{title}}</h1>
+
+    {{#each skills}}
+      <div class="skill-section">
+        <h4>{{this.type}}</h4>
+        <ul class="skill-list">
+          {{#each this.lang}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    {{/each}}
+
+  </section>
+</body>
+</html>
