@@ -3,11 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-<<<<<<< HEAD
     "start": "nodemon ./bin/www"
-=======
- "start": "nodemon ./bin/www"
->>>>>>> 845fcc0233916df972076fa08d64adb579b8058e
   },
   "dependencies": {
     "boostrap": "^2.0.0",
