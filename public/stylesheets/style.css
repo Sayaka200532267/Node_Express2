@@ -34,8 +34,13 @@ header {
   justify-content: space-between; 
   align-items: center; 
 }
-
-
+.avatarPage {
+  display: flex; 
+  align-items: center;
+}
+.avatarPage p {
+  margin-right: 40px;
+}
 
 footer {
   margin-top: 20px;

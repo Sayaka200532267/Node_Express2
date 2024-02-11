@@ -11,7 +11,8 @@ router.get('/', function(req, res, next) {
 
 router.get('/about', function(req, res, next) {
   res.render('about', { title: 'About', about: 'I am currently studying web development at Georgian College, Interactive Media Design - web and have a strong grasp of HTML, CSS, and JavaScript. My interest lies in the frontend technologies, and I am motivated by the creativity and visual impact of coding.I am willing to learn new technologies since I will be a junior developer, and require a lot of learning.',
-  backgroundImg: 'https://images.unsplash.com/photo-1690382285917-73dfd2a22d07?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'});
+  backgroundImg: 'https://images.unsplash.com/photo-1690382285917-73dfd2a22d07?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+});
 })
 router.get('/skills', function(req, res, next){
   res.render('Skills', 
@@ -27,6 +28,7 @@ router.get('/skills', function(req, res, next){
 router.get('/contact', function(req, res, next){
   res.render('Contact', {title: 'Contact', 
   backgroundImg: 'https://images.unsplash.com/photo-1423666639041-f56000c27a9a?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  pic: 'images/avatar.png',
   contact: 'Please contact me at: (705)716-3492 or email me at: sayakaohara@outlook.com'})
 })
 router.get('/resume', function(req, res, next){
@@ -65,7 +67,6 @@ router.get('/resume', function(req, res, next){
          }
       ],
       backgroundImg: 'images/resume.png',
-      resume: 'https://drive.google.com/file/d/1hNQZ3X0W1Rm1Z0Tb5a1L6d2u6XJv5Q8j/view?usp=sharing'
     }
   });
 });
