@@ -1,11 +1,12 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
 }
+
 html, body {
   height: 100%;
   margin: 0;
@@ -13,9 +14,11 @@ html, body {
   display: flex;
   flex-direction: column;
 }
+
 header, footer {
   background-color: #5097e3;
 }
+
 main {
   flex: 1;
 }
@@ -24,8 +27,14 @@ header {
   padding: 10px;
   display: flex;
   justify-content: flex-end;
- 
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
 
 
 footer {
@@ -50,9 +59,10 @@ footer a {
   text-decoration: none;
 }
 
-h1{
+h1, h3 {
   text-align: center;
 }
+
 body {
   background-size: cover;
   background-repeat: no-repeat;
@@ -73,7 +83,8 @@ section {
 section h1 {
   margin-bottom: 20px;
 }
-p{
+
+p {
   font-size: 20px;
 }
 
@@ -81,11 +92,13 @@ p{
   margin-bottom: 10px;
 }
 
-.skill-list {
+li {
   list-style: none;
+}
+
+.skill-list {
   padding: 0;
   display: flex;
-
 }
 
 .skill-list li {

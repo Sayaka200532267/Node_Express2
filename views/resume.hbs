@@ -1,13 +1,30 @@
-<body style="background-image: url('{{backgroundImg}}'); ">
-<section class="m-5">
-<h1>{{title}}</h1>
+<body style="background-image: url('{{content.backgroundImg}}');">
+  <section class="m-5">
+    <div class="column">
+    <h>{{title}}</h>
+    <p>{{content.title}}</p>
 
-<p>{{resume}}</p>
-<p>Education:</p>
- </p>{{Education1}}</p>
-<p>{{Education2}}</p>
-<p>{{Experience1}}</p>
-<p>{{Experience2}}</p>
-<p>{{Experience3}}</p>
-</section>
+    <p>Education:</p>
+    <ul>
+      {{#each content.education}}
+        <li>
+          <p>{{this.school}} | {{this.location}} | {{this.major}}, {{this.year}}</p>
+        </li>
+      {{/each}}
+    </ul>
+    </div>
+    <div class="column">
+    <p>Experiences:</p>
+    <ul>
+      {{#each content.experiences}}
+        <li>
+          <p>{{this.title}}  |  {{this.location}},  {{this.year}}</p>
+          <p>{{this.responsibilities}}</p>
+        </li>
+      {{/each}}
+    </ul>
+</div>
+<p>Read more on my resume: download from here <a href='{{content.resume}}'>Resume</a></p>
+
+  </section>
 </body>
