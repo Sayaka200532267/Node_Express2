@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www",
-    "build": "npm install"
   },
   "dependencies": {
     "boostrap": "^2.0.0",
