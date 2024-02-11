@@ -17,7 +17,7 @@ router.get('/about', function(req, res, next) {
 router.get('/skills', function(req, res, next){
   res.render('Skills', 
   {backgroundImg: 'https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    title: 'Skills',
+    title: 'skills',
     skills: [
       { type: 'Programming Languages', lang: ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'JSON', 'SQL', 'SASS', 'LESS', 'jQuery', '.Net', 'C#', 'PHP'] },
       { type: 'Additional Skills', lang: ['Express', 'RESTful API', 'MongoDB', 'Git', 'GitHub', 'Bootstrap', 'VSCode', 'Adobe Photoshop', 'Adobe Illustrator', 'Jira'] },
@@ -26,13 +26,13 @@ router.get('/skills', function(req, res, next){
 });
 
 router.get('/contact', function(req, res, next){
-  res.render('Contact', {title: 'Contact', 
+  res.render('contact', {title: 'Contact', 
   backgroundImg: 'https://images.unsplash.com/photo-1423666639041-f56000c27a9a?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   pic: 'images/avatar.png',
   contact: 'Please contact me at: (705)716-3492 or email me at: sayakaohara@outlook.com'})
 })
 router.get('/resume', function(req, res, next){
-  res.render('Resume', {
+  res.render('resume', {
     title: 'Resume',
     content: {
       education: [
